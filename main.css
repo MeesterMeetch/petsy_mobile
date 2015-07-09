@@ -1,0 +1,238 @@
+body{
+  background-color: #D2ED9E;
+  color:#F56400;
+  font-family: droid serif;
+  font-size: 14px;
+}
+
+a:hover{
+  text-decoration: none;
+}
+
+.mainStore{
+  margin: auto;
+  width: 90%;
+}
+
+.filterSort{
+  padding: 0;
+  margin-right: 5%;
+  margin-top: -40px;
+  border: #F56400 1px solid;
+  border-top: 0px;
+  border-right: 0px;
+  border-left: 0px;
+  text-align: right;
+}
+
+.filterSort li{
+  display: block;
+  margin-bottom: 30px;
+  text-align: center;
+  font-size: 2rem;
+}
+
+.filterSort a{
+  color: #F56400;
+}
+
+.filterSort a:hover{
+  color: #337ab7;
+}
+
+.filterSort input{
+  border-radius: 3%;
+}
+
+.storeItem{
+  background-color: #FFFFF1;
+  display: inline-block;
+  width: 31%;
+  margin: 15px;
+  padding: 10px;
+  border-radius: 5%;
+  color: #F56400;
+  text-align: center;
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(245,173,40,0.35);
+  -moz-box-shadow: 0px 0px 5px 0px rgba(245,173,40,0.35);
+  box-shadow: 0px 0px 5px 0px rgba(245,173,40,0.35);
+}
+
+.storeItem h4{
+  font-size: 2rem;
+}
+
+.storeItem a{
+  clear: both;
+  display:block;
+  color: #F56400;
+  text-align: center;
+}
+
+.storeItem a:hover{
+  color: #337ab7;
+}
+
+.itemTitle{
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  color: #F56400;
+}
+
+.detailLink{
+  margin: auto;
+  text-align: center;
+  display: block;
+  padding-top: 10px;
+}
+
+.itemTitle:hover{
+  color: #337ab7;
+}
+
+.detailItem{
+  background-color: #FCF1DE;
+  border-radius: 5px;
+  padding: 15px;
+  width: 800px;
+  text-align: center;
+  margin: auto;
+  color: #F56400;
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(245,173,40,0.35);
+  -moz-box-shadow: 0px 0px 5px 0px rgba(245,173,40,0.35);
+  box-shadow: 0px 0px 5px 0px rgba(245,173,40,0.35);
+}
+
+.detailItem img{
+  max-width:98%;
+  max-height: 98%;
+}
+
+.detailItem a{
+  color: #F56400;
+  text-align: center;
+}
+
+.detailItem a:hover{
+  color: #337ab7;
+}
+
+.materialsList{
+  text-align: left;
+}
+
+.materialsList ul{
+  list-style-type: circle;
+}
+
+.materialsList li{
+  display: list-item;
+}
+
+.navBar{
+  width: 80%;
+  padding: 5px 30px 30px 30px;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.navBar h1{
+  font-family: 'Cedarville Cursive', cursive;
+  font-size: 8rem;
+  display: inline-block;
+  float: left;
+  margin-left: 4%;
+
+}
+
+h3{
+  font-size: 1.7rem;
+}
+
+.navBar a{
+  color: #F56400;
+}
+
+.navBar ul{
+  position: absolute;
+  top: 60px;
+  right: 5%;
+}
+
+ul{
+  list-style: none;
+}
+
+li{
+  display: inline-block;
+}
+
+.shoppingCart{
+  width: 80%;
+  margin: auto;
+}
+
+.shoppingCartItem{
+  background-color: #FCF1DE;
+  border-radius: 5%;
+  padding: 15px 15px 35px 15px;
+  margin-top: 45px;
+  color: #F56400;
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(245,173,40,0.35);
+  -moz-box-shadow: 0px 0px 5px 0px rgba(245,173,40,0.35);
+  box-shadow: 0px 0px 5px 0px rgba(245,173,40,0.35);
+}
+
+.shoppingCartItem img{
+  float:left;
+  padding-right: 30px;
+}
+
+.shoppingDescription{
+  text-align: right;
+}
+
+.shoppingDescription a{
+  color:#F56400;
+}
+
+.shoppingDescription a:hover{
+  color: #337ab7;
+}
+
+.shoppingDescription li{
+  display: block;
+}
+
+.shoppingCartTotal{
+  float:right;
+}
+
+.glyphicon-shopping-cart{
+  font-size: 5rem;
+  text-align: center;
+  display: inline;
+  color: #3333FF;
+}
+
+.glyphicon-remove{
+  font-size: 2rem;
+  color:#F56400;
+  float: right;
+}
+
+.glyphicon-remove:hover{
+  color: #337ab7;
+}
+
+.cartCounter{
+  background-color: #FFFFF1;
+  border-radius: 20%;
+  font-size: 1.5rem;
+  padding: 2px 10px 2px 10px;
+  position: absolute;
+  top: -8px;
+  right: -13px;
+  color: #CC0000;
+}

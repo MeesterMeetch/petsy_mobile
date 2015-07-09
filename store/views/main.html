@@ -1,0 +1,12 @@
+<div class="mainStore">
+  <ul class="filterSort">
+    <li><input type="text" name="name" value="" placeholder="Search for items" class="filterSearch" ng-model="searchFilter"></li>
+    <li>Sort By: <a href="" ng-click="selectSort('-price')"> Highest Price </a> | <a href="" ng-click="selectSort('price')"> Lowest Price </a> | <a href="" ng-click="selectSort('title')">Title (A to Z)</a> | <a href="" ng-click="selectSort('-title')">Title (Z to A)</a></li>
+  </ul>
+  <div class = "storeItem" ng-repeat = "el in items | orderBy:sortName | filter:searchFilter">
+    <a class="detailLink" href="#/detail/{{el.id}}"><img ng-src="{{el.smallImg}}" alt="" /></a>
+    <a class="detailLink" href="#/detail/{{el.id}}"><h3 class="itemTitle">{{el.title}}</h3></a>
+    <h4>{{el.price | currency}}</h4>
+    <a href="{{el.etsyUrl}}">View on Etsy</a>
+  </div>
+</div>
