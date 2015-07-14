@@ -1,0 +1,21 @@
+<!-- <div class="shoppingCart"> -->
+  <div class="shoppingCartItem">
+        <ul class="shoppingDescription">
+          <li><img ng-src="{{p.tinyImg}}" alt="" /></li>
+          <li>
+            <ul>
+              <li><h3><a href="#/detail/{{p.id}}">{{p.title}}</a></h3></li>
+              <li>{{p.price | currency}}</li>
+              <li><a href="{{p.etsyUrl}}">View on Etsy</a></li>
+              <li><a class="glyphicon glyphicon-remove" href="#/shoppingcart" ng-controller="ShoppingCartController" ng-click="removeFromCart(p._id)"></a></li>
+              <!-- <li><a class="glyphicon glyphicon-remove" href="#/shoppingcart" ng-click="removeFromCart(p._id)"></a></li> -->
+            </ul>
+          </li>
+        </ul>
+  </div>
+<!--
+  <div class="shoppingCartTotal">
+    <h3>TOTAL: {{orderTotalPrice(items) | currency}}</h3>
+    <h3>{{items.length}} Items in Cart</h3>
+  </div>
+</div> -->
