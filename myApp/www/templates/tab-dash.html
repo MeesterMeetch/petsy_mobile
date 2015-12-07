@@ -1,5 +1,12 @@
 <ion-view view-title="Dashboard">
   <ion-content class="padding">
+
+    <button class="button button-block button-dark" ng-click="identifyUser()">
+      Identify a user
+    </button>
+    <button class="button button-block button-positive" ng-if="identified" ng-click="pushRegister()">
+      Register for Push
+    </button>
     <div class="list card">
       <div class="item item-divider">Recent Updates</div>
       <div class="item item-body">
@@ -21,6 +28,15 @@
       <div class="item item-body">
         <div>
           You have <b>29</b> meetings on your calendar tomorrow.
+        </div>
+      </div>
+    </div>
+
+    <div class="list card">
+      <div class="item item-divider">SHOW ME</div>
+      <div class="item item-body">
+        <div>
+          THE FUCK <b>yes</b> DAMNIT TI AM
         </div>
       </div>
     </div>

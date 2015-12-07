@@ -5,7 +5,15 @@
 // the 2nd parameter is an array of 'requires'
 // 'starter.services' is found in services.js
 // 'starter.controllers' is found in controllers.js
-angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
+angular.module('starter',  [
+  'ionic',
+  'ngCordova',
+  'ionic.service.core',
+  'ionic.service.push',
+  'starter.controllers',
+  'starter.services'
+  ]
+)
 
 .run(function($ionicPlatform) {
   $ionicPlatform.ready(function() {
@@ -82,40 +90,18 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
   // if none of the above states are matched, use this as the fallback
   $urlRouterProvider.otherwise('/tab/dash');
 
-
-  .config(function ($authProvider) {
-    // OAuth popup should expand to full screen with no location bar/toolbar.
-      var commonConfig = {
-        popupOptions: {
-          location: 'no',
-          toolbar: 'no',
-          width: window.screen.width,
-          height: window.screen.height
-        }
-      };
-
-      if (ionic.Platform.isIOS() || ionic.Platform.isAndroid()) {
-        $authProvider.platform = 'mobile';
-        commonConfig.redirectUri = 'http://localhost/';
-      }
-
-      $authProvider.google(angular.extend({}, commonConfig, {
-      clientId: '469379853070-g23rimletc4dddro1vcqvak3nk3gsrgm.apps.googleusercontent.com',
-      url: 'http://auth-boiler.herokuapp.com/auth/google'
-    }));
-
-  // // Add the 'ionic.service.core' module to your main angular module:
-  // angular.module('test', ['ionic.service.core'])
-  // // Identify App
-  // .config(['$ionicAppProvider', function($ionicAppProvider) {
-  //   // Identify app
-  //   $ionicAppProvider.identify({
-  //     // The App ID for the server
-  //     app_id: 'YOUR_APP_ID',
-  //     // The API key all services will use for this app
-  //     api_key: 'YOUR_PUBLIC_API_KEY'
-  //   });
-  // }])
-
-
+  // Add the 'ionic.service.core' module to your main angular module:
 });
+
+angular.module('starter')
+// Identify App
+.config(['$ionicAppProvider', function($ionicAppProvider) {
+  // Identify app
+  $ionicAppProvider.identify({
+    // The App ID for the server
+    app_id: '359fd05a',
+    // The API key all services will use for this app
+    api_key: 'cb7e9d91d53ccdc2e80c777f466a33a4885eb11be201c3d4',
+    dev_push: true
+  });
+}])
